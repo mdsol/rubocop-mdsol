@@ -1,0 +1,8 @@
+dist: focal
+language: generic
+
+deploy:
+  edge: true # opt in to dpl v2
+  provider: rubygems
+  on:
+    tags: true

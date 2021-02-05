@@ -5,14 +5,10 @@ This gem provides base RuboCop configuration files for Ruby projects at Medidata
 
 ## Installation
 
-Add the following lines to your application's Gemfile:
+Add the following line to your application's Gemfile:
 
 ```ruby
-git_source(:github) { |repo| "git@github.com:#{repo}.git" }
-
-group :development, :test do
-  gem "rubocop-mdsol", github: "mdsol/rubocop-mdsol", tag: "<latest tag>"
-end
+gem "rubocop-mdsol", "~> 0.1"
 ```
 
 
