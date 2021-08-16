@@ -39,7 +39,7 @@ inherit_gem:
 Plain ruby projects only need to inherit from the base configuration file:
 
 ```yaml
-inherit_from:
+inherit_gem:
   rubocop-mdsol: rubocop.yml
 
 # your customizations here...
