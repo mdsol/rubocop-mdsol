@@ -19,8 +19,9 @@ Lint/AmbiguousBlockAssociation:
 Layout/FirstArrayElementIndentation:
   EnforcedStyle: consistent
 
+#####.....#####.....#####.....#####.....#####.....#####.....#####.....#####.....#####.....#####.....#####.....#####.....#####.....#####..... 145
 Layout/LineLength:
-  Max: 120
+  Max: 145
 
 Layout/MultilineMethodCallIndentation:
   EnforcedStyle: indented
