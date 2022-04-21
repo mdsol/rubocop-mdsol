@@ -1,29 +1,44 @@
 RSpec:
+  Enabled: true
+
+RSpec/AnyInstance:
   Enabled: false
 
-RSpec/ContextMethod:
-  Enabled: true
+RSpec/DescribeClass:
+  Enabled: false
 
-RSpec/ContextWording:
-  Enabled: true
+RSpec/DescribedClass:
+  Enabled: false
 
-RSpec/EmptyLineAfterExample:
-  Enabled: true
+RSpec/ExampleLength:
+  Enabled: false
 
-RSpec/EmptyLineAfterExampleGroup:
-  Enabled: true
+RSpec/ExpectInHook:
+  Enabled: false
 
-RSpec/EmptyLineAfterFinalLet:
-  Enabled: true
+RSpec/LetSetup:
+  Enabled: false
 
-RSpec/EmptyLineAfterHook:
-  Enabled: true
+RSpec/MessageChain:
+  Enabled: false
 
-RSpec/ExampleWording:
-  Enabled: true
+RSpec/MessageSpies:
+  Enabled: false
 
-RSpec/LetBeforeExamples:
-  Enabled: true
+RSpec/MultipleExpectations:
+  Enabled: false
 
-RSpec/Rails/HttpStatus:
-  Enabled: true
+RSpec/MultipleMemoizedHelpers:
+  Enabled: false
+
+RSpec/NamedSubject:
+  Enabled: false
+
+RSpec/NestedGroups:
+  Enabled: false
+
+RSpec/NotToNot:
+  Enabled: false
+
+RSpec/VerifiedDoubles:
+  Enabled: false
