@@ -47,7 +47,7 @@ inherit_gem:
 
 ### RSpec
 
-To analyse RSpec files, add the [rubocop-rpec](https://rubygems.org/gems/rubocop-rspec) gem to your Gemfile and in your RuboCop configuration require it alongside the RSpec-specific yaml file:
+To lint RSpec files, add the [rubocop-rpec](https://rubygems.org/gems/rubocop-rspec) gem to your Gemfile and in your RuboCop configuration require it alongside the RSpec-specific yaml file:
 
 ```yaml
 require: rubocop-rspec
