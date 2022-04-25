@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name     = "rubocop-mdsol"
-  spec.version  = "0.1.0"
+  spec.version  = "0.2.0"
   spec.authors  = ["Team Æ", "Team 10"]
   spec.email    = ["ae@mdsol.com", "team10@mdsol.com"]
   spec.license  = "MIT"
@@ -19,6 +19,7 @@ Gem::Specification.new do |spec|
     "README.md",
     "rubocop-mdsol.gemspec",
     "rubocop-rails.yml",
+    "rubocop-rspec.yml",
     "rubocop.yml"
   ]
 

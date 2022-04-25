@@ -45,6 +45,21 @@ inherit_gem:
 # your customizations here...
 ```
 
+### RSpec
+
+To lint RSpec files, add the [rubocop-rpec](https://rubygems.org/gems/rubocop-rspec) gem to your Gemfile and in your RuboCop configuration require it alongside the RSpec-specific yaml file:
+
+```yaml
+require: rubocop-rspec
+
+inherit_gem:
+  rubocop-mdsol:
+    - rubocop.yml
+    - rubocop-rspec.yml
+
+# your customizations here...
+```
+
 
 ## Recommended customizations
 
