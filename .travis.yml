@@ -6,13 +6,15 @@ rvm:
   - 2.5
   - 2.6
   - 2.7
+  - 3.0
+  - 3.1
 
 script:
+  - bundle exec rubocop
   - bundle exec rspec
 
 before_install:
-  - gem update --system --force -N > /dev/null && echo "Rubygems version $(gem --version)"
-  - gem install bundler --force -N && bundle --version
+  - gem update --system --force -N > /dev/null && echo "Rubygems version $(gem --version)" && bundle --version
 
 deploy:
   edge: true # opt in to dpl v2
