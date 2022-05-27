@@ -60,6 +60,19 @@ inherit_gem:
 # your customizations here...
 ```
 
+### Custom Cops
+
+To activate the custom cops (`mdsol/*`) shipped with this Gem:
+
+```yaml
+require: rubocop-performance
+
+# or combining it with other cops
+
+require:
+  - rubocop-mdsol
+  - rubocop-rails
+```
 
 ## Recommended customizations
 
