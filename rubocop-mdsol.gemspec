@@ -19,7 +19,7 @@ Gem::Specification.new do |spec|
     f.match(%r{^(test|spec|features)/})
   end
 
-  spec.required_ruby_version = ">= 2.4.0"
+  spec.required_ruby_version = ">= 2.5.0"
   spec.require_paths = ["lib"]
 
   spec.add_dependency "rubocop", "~> 1.0"
