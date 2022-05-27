@@ -1,8 +1,10 @@
 # frozen_string_literal: true
 
+require_relative "lib/rubocop/mdsol/version"
+
 Gem::Specification.new do |spec|
   spec.name     = "rubocop-mdsol"
-  spec.version  = "0.2.0"
+  spec.version  = RuboCop::Mdsol::VERSION
   spec.authors  = ["Team Æ", "Team 10"]
   spec.email    = ["ae@mdsol.com", "team10@mdsol.com"]
   spec.license  = "MIT"
@@ -13,17 +15,12 @@ Gem::Specification.new do |spec|
     "changelog_uri" => "https://github.com/mdsol/rubocop-mdsol/blob/develop/CHANGELOG.md"
   }
 
-  spec.files    = Dir[
-    "CHANGELOG.md",
-    "MIT-LICENSE",
-    "README.md",
-    "rubocop-mdsol.gemspec",
-    "rubocop-rails.yml",
-    "rubocop-rspec.yml",
-    "rubocop.yml"
-  ]
+  spec.files = `git ls-files -z`.split("\x0").reject do |f|
+    f.match(%r{^(test|spec|features)/})
+  end
 
   spec.required_ruby_version = ">= 2.4.0"
+  spec.require_paths = ["lib"]
 
   spec.add_dependency "rubocop", "~> 1.0"
 end
