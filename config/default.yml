@@ -1,6 +1,9 @@
-# Write it!
+Mdsol/LogWithData:
+  Description: Favor the `logger.<level>_with_data` method for structured logging.
+  Enabled: true
+  VersionAdded: 0.3.0
 
-Mdsol/SuperCoolCopName:
-  Description: 'TODO: Write a description of the cop.'
-  Enabled: pending
-  VersionAdded: '<<next>>'
+Mdsol/UnlessNotEqual:
+  Description: Avoid double negative condition.
+  Enabled: true
+  VersionAdded: 0.3.0
