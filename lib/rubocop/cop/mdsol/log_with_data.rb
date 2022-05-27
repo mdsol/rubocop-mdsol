@@ -49,7 +49,7 @@ module RuboCop
           logger_with_interpolation(node) do |logger_owner, log_method, log_message|
             return unless registered_logger_owners.include?(logger_owner.to_s)
 
-            if string_interpoloations_exceed_threshold?(log_message) || contain_forbidden_enumerable_method?(log_message)
+            if interpoloations_exceed_threshold?(log_message) || contain_forbidden_enumerable_method?(log_message)
               msg = format(MSG, method: log_method.to_s)
               add_offense(node, message: msg)
             end
@@ -62,7 +62,7 @@ module RuboCop
           @registered_logger_owners ||= (["Rails"] + cop_config["LoggerOwners"].to_a).uniq
         end
 
-        def string_interpoloations_exceed_threshold?(log_message_node)
+        def interpoloations_exceed_threshold?(log_message_node)
           log_message_node.child_nodes.count { |node| node.type == :begin } > string_interpolations_threshold
         end
 

@@ -1,0 +1,13 @@
+require:
+  - rubocop-rspec
+
+inherit_from:
+  - ./rubocop.yml
+  - ./rubocop-rspec.yml
+
+AllCops:
+  TargetRubyVersion: 2.5
+
+Style/StringLiterals:
+  Enabled: true
+  EnforcedStyle: double_quotes

@@ -12,7 +12,8 @@ Gem::Specification.new do |spec|
 
   spec.metadata = {
     "homepage_uri" => "https://github.com/mdsol/rubocop-mdsol",
-    "changelog_uri" => "https://github.com/mdsol/rubocop-mdsol/blob/develop/CHANGELOG.md"
+    "changelog_uri" => "https://github.com/mdsol/rubocop-mdsol/blob/develop/CHANGELOG.md",
+    "rubygems_mfa_required" => "true"
   }
 
   spec.files = `git ls-files -z`.split("\x0").reject do |f|
@@ -23,4 +24,6 @@ Gem::Specification.new do |spec|
   spec.require_paths = ["lib"]
 
   spec.add_dependency "rubocop", "~> 1.0"
+  spec.add_development_dependency "rspec", "~> 3.11"
+  spec.add_development_dependency "rubocop-rspec", "~> 2.11"
 end
