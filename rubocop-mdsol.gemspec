@@ -12,8 +12,7 @@ Gem::Specification.new do |spec|
 
   spec.metadata = {
     "homepage_uri" => "https://github.com/mdsol/rubocop-mdsol",
-    "changelog_uri" => "https://github.com/mdsol/rubocop-mdsol/blob/develop/CHANGELOG.md",
-    "rubygems_mfa_required" => "true"
+    "changelog_uri" => "https://github.com/mdsol/rubocop-mdsol/blob/develop/CHANGELOG.md"
   }
 
   spec.files = `git ls-files -z`.split("\x0").reject do |f|

@@ -5,6 +5,9 @@ inherit_from:
   - ./rubocop.yml
   - ./rubocop-rspec.yml
 
+Gemspec/RequireMFA:
+  Enabled: false
+
 Naming/FileName:
   Exclude:
     - lib/rubocop-mdsol.rb
