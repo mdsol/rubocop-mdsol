@@ -65,7 +65,7 @@ inherit_gem:
 To activate the custom cops (`mdsol/*`) shipped with this Gem:
 
 ```yaml
-require: rubocop-performance
+require: rubocop-mdsol
 
 # or using the array notation to specify multiple extensions:
 
