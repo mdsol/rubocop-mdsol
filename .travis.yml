@@ -1,5 +1,18 @@
 dist: focal
-language: generic
+language: ruby
+cache: bundler
+
+rvm:
+  - 2.7
+  - 3.0
+  - 3.1
+
+script:
+  - bundle exec rubocop
+  - bundle exec rspec
+
+before_install:
+  - gem update --system --force -N > /dev/null && echo "Rubygems version $(gem --version)" && bundle --version
 
 deploy:
   edge: true # opt in to dpl v2

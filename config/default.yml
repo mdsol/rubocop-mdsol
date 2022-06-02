@@ -1,0 +1,9 @@
+Mdsol/LogWithData:
+  Description: Favor the `logger.<level>_with_data` method for structured logging.
+  Enabled: true
+  VersionAdded: 0.3.0
+
+Mdsol/UnlessNotEqual:
+  Description: Avoid double negative condition.
+  Enabled: true
+  VersionAdded: 0.3.0
