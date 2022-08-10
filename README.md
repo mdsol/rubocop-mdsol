@@ -8,7 +8,7 @@ This gem provides base RuboCop configuration files for Ruby projects at Medidata
 Add the following line to your application's Gemfile:
 
 ```ruby
-gem "rubocop-mdsol", "~> 0.1"
+gem "rubocop-mdsol", "~> 0.3"
 ```
 
 
