@@ -1,9 +1,11 @@
-require:
-  - rubocop-rspec
+plugins: rubocop-rspec
 
 inherit_from:
   - ./rubocop.yml
   - ./rubocop-rspec.yml
+
+Gemspec/DevelopmentDependencies:
+  Enabled: false
 
 Gemspec/RequireMFA:
   Enabled: false
