@@ -9,7 +9,7 @@ updates:
   - package-ecosystem: bundler
     directory: /
     schedule:
-      interval: weekly
+      interval: monthly
     allow:
       - dependency-type: all
     groups:
@@ -20,4 +20,4 @@ updates:
   - package-ecosystem: github-actions
     directory: /
     schedule:
-      interval: weekly
+      interval: monthly
