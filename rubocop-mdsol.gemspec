@@ -19,11 +19,11 @@ Gem::Specification.new do |spec|
     f.match(/^(\.|bin|spec)/)
   end
 
-  spec.required_ruby_version = ">= 2.7.0"
+  spec.required_ruby_version = ">= 3.2.0"
   spec.require_paths = ["lib"]
 
-  spec.add_dependency "rubocop", "~> 1.0"
+  spec.add_dependency "rubocop", "~> 1.50"
   spec.add_development_dependency "rake", "~> 13.0"
   spec.add_development_dependency "rspec", "~> 3.11"
-  spec.add_development_dependency "rubocop-rspec", "~> 2.11"
+  spec.add_development_dependency "rubocop-rspec", "~> 3.9"
 end

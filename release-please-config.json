@@ -1,0 +1,11 @@
+{
+  "release-type": "ruby",
+  "include-component-in-tag": false,
+  "include-v-in-tag": true,
+  "packages": {
+    ".": {
+      "package-name": "rubocop-mdsol",
+      "version-file": "lib/rubocop/mdsol/version.rb"
+    }
+  }
+}
