@@ -24,5 +24,6 @@ jobs:
         uses: ruby/setup-ruby@319994f95fa847cf3fb3cd3dbe89f6dcde9f178f # v1.295.0
         with:
           ruby-version: 4.0
+          bundler-cache: true # runs 'bundle install' and caches installed gems automatically
 
       - uses: rubygems/release-gem@e9a6361a0b14562539327c2a02373edc56dd3169 # v1.1.4
